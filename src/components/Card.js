@@ -1,11 +1,9 @@
+import { useState, useEffect } from "react";
 const Card = (props) => {
   return (
-    <div>
-      <div>
-        {console.log(props.charImage)}
-        <img src={props.charImage} alt="Solaire of Astora" />
-        <h2>Character Name</h2>
-      </div>
+    <div className="character-cards" onClick={props.onClick}>
+      <img src={props.image} alt="" />
+      <h2>{props.name}</h2>
     </div>
   );
 };
