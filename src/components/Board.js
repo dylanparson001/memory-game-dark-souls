@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
+import Header from "./Header";
 import "../styles/board.css";
 
 // import images
@@ -17,14 +18,6 @@ import smoughImage from "../images/smough.jpg";
 import solaireImage from "../images/solaire.jpg";
 
 const Board = () => {
-  // score state
-  const [currentScore, setCurrentScore] = useState(0);
-  const [isClicked, setIsClicked] = useState(false);
-
-  useEffect(() => {
-    setIsClicked(true);
-  }, isClicked);
-
   // Character object array
   const characters = [
     { name: "Abyss Watchers", image: abysswatchersImage },
@@ -40,24 +33,53 @@ const Board = () => {
     { name: "Smough the Executioner", image: smoughImage },
     { name: "Solaire of Astora", image: solaireImage },
   ];
+  // score state
+  const [currentScore, setCurrentScore] = useState(0);
+  // state array for cards that have been clicked this session
+  const [knownCards, setKnownCards] = useState([]);
+  // state for high score
+  const [highScore, setHighScore] = useState(0);
+
+  // checks to see if the card has already been clicked
+  // sent to card component, which is activated on click and sends back the cards name a
+  const checkCards = (clickedCard) => {
+    // check for clicked card in array
+    if (knownCards.includes(clickedCard)) {
+      // reset known cards and current score
+      setKnownCards([]);
+      setCurrentScore(0);
+    } else {
+      // add clicked card to known cards
+      setKnownCards([...knownCards, clickedCard]);
+      // increase current score
+      setCurrentScore(currentScore + 1);
+    }
+  };
+  useEffect(() => {
+    // if the current score is higher than the high score, update the high score
+    if (currentScore > highScore) {
+      setHighScore(currentScore);
+    }
+  });
 
   // taken from javascript.info
-  function shuffle(array) {
+  const shuffle = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
-  }
+  };
 
   return (
     <div className="game-board">
-      <h2>{currentScore}</h2>
+      <Header currentScore={currentScore} highScore={highScore}></Header>
+
       {shuffle(characters)}
       {characters.map((character) => {
         return (
           <Card
+            checkCards={checkCards}
             key={character.name}
-            onClick={() => setCurrentScore(currentScore + 1)}
             name={character.name}
             image={character.image}
           />
