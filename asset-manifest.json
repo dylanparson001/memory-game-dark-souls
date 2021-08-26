@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/memory-game-dark-souls/static/css/main.7d81bdd2.chunk.css",
-    "main.js": "/memory-game-dark-souls/static/js/main.d338c001.chunk.js",
-    "main.js.map": "/memory-game-dark-souls/static/js/main.d338c001.chunk.js.map",
+    "main.css": "/memory-game-dark-souls/static/css/main.1996be4a.chunk.css",
+    "main.js": "/memory-game-dark-souls/static/js/main.f4d5f32a.chunk.js",
+    "main.js.map": "/memory-game-dark-souls/static/js/main.f4d5f32a.chunk.js.map",
     "runtime-main.js": "/memory-game-dark-souls/static/js/runtime-main.abf587c0.js",
     "runtime-main.js.map": "/memory-game-dark-souls/static/js/runtime-main.abf587c0.js.map",
-    "static/js/2.9d573786.chunk.js": "/memory-game-dark-souls/static/js/2.9d573786.chunk.js",
-    "static/js/2.9d573786.chunk.js.map": "/memory-game-dark-souls/static/js/2.9d573786.chunk.js.map",
+    "static/js/2.4b3a27a7.chunk.js": "/memory-game-dark-souls/static/js/2.4b3a27a7.chunk.js",
+    "static/js/2.4b3a27a7.chunk.js.map": "/memory-game-dark-souls/static/js/2.4b3a27a7.chunk.js.map",
     "index.html": "/memory-game-dark-souls/index.html",
-    "static/css/main.7d81bdd2.chunk.css.map": "/memory-game-dark-souls/static/css/main.7d81bdd2.chunk.css.map",
-    "static/js/2.9d573786.chunk.js.LICENSE.txt": "/memory-game-dark-souls/static/js/2.9d573786.chunk.js.LICENSE.txt",
-    "static/media/abysswatchers.615270d8.jpg": "/memory-game-dark-souls/static/media/abysswatchers.615270d8.jpg",
-    "static/media/artorias.a03a190e.jpg": "/memory-game-dark-souls/static/media/artorias.a03a190e.jpg",
-    "static/media/gwyn.93ac40ba.jpg": "/memory-game-dark-souls/static/media/gwyn.93ac40ba.jpg",
-    "static/media/havel.d66c3cec.jpg": "/memory-game-dark-souls/static/media/havel.d66c3cec.jpg",
-    "static/media/nameless.f46f0c44.jpg": "/memory-game-dark-souls/static/media/nameless.f46f0c44.jpg",
-    "static/media/nashandra.fe0282aa.jpg": "/memory-game-dark-souls/static/media/nashandra.fe0282aa.jpg",
-    "static/media/nito.66f7785b.jpg": "/memory-game-dark-souls/static/media/nito.66f7785b.jpg",
+    "static/css/main.1996be4a.chunk.css.map": "/memory-game-dark-souls/static/css/main.1996be4a.chunk.css.map",
+    "static/js/2.4b3a27a7.chunk.js.LICENSE.txt": "/memory-game-dark-souls/static/js/2.4b3a27a7.chunk.js.LICENSE.txt",
+    "static/media/abysswatchers.459b9ea7.jpg": "/memory-game-dark-souls/static/media/abysswatchers.459b9ea7.jpg",
+    "static/media/artorias.d979b61a.jpg": "/memory-game-dark-souls/static/media/artorias.d979b61a.jpg",
+    "static/media/gwyn.70fe93fa.jpg": "/memory-game-dark-souls/static/media/gwyn.70fe93fa.jpg",
+    "static/media/havel.a97e3c76.jpg": "/memory-game-dark-souls/static/media/havel.a97e3c76.jpg",
+    "static/media/nameless.071b1dc5.jpg": "/memory-game-dark-souls/static/media/nameless.071b1dc5.jpg",
+    "static/media/nashandra.d00a7167.jpg": "/memory-game-dark-souls/static/media/nashandra.d00a7167.jpg",
+    "static/media/nito.8b6e7d84.jpg": "/memory-game-dark-souls/static/media/nito.8b6e7d84.jpg",
     "static/media/seath.26378d59.jpg": "/memory-game-dark-souls/static/media/seath.26378d59.jpg",
-    "static/media/smough.722f62ae.jpg": "/memory-game-dark-souls/static/media/smough.722f62ae.jpg",
-    "static/media/solaire.28c4b115.jpg": "/memory-game-dark-souls/static/media/solaire.28c4b115.jpg"
+    "static/media/smough.f0cf6f3f.jpg": "/memory-game-dark-souls/static/media/smough.f0cf6f3f.jpg",
+    "static/media/solaire.30b18358.jpg": "/memory-game-dark-souls/static/media/solaire.30b18358.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.abf587c0.js",
-    "static/js/2.9d573786.chunk.js",
-    "static/css/main.7d81bdd2.chunk.css",
-    "static/js/main.d338c001.chunk.js"
+    "static/js/2.4b3a27a7.chunk.js",
+    "static/css/main.1996be4a.chunk.css",
+    "static/js/main.f4d5f32a.chunk.js"
   ]
 }
