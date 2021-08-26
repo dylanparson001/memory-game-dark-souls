@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
 import Header from "./Header";
+
 import "../styles/board.css";
 
 // import images
@@ -39,6 +40,8 @@ const Board = () => {
   const [knownCards, setKnownCards] = useState([]);
   // state for high score
   const [highScore, setHighScore] = useState(0);
+  // animations 
+  const [entered, setEntered] = useState(true);
 
   // checks to see if the card has already been clicked
   // sent to card component, which is activated on click and sends back the cards name a
@@ -55,12 +58,13 @@ const Board = () => {
       setCurrentScore(currentScore + 1);
     }
   };
+
   useEffect(() => {
     // if the current score is higher than the high score, update the high score
     if (currentScore > highScore) {
       setHighScore(currentScore);
     }
-  });
+  }, [currentScore, highScore]);
 
   // taken from javascript.info
   const shuffle = (array) => {
@@ -71,20 +75,23 @@ const Board = () => {
   };
 
   return (
-    <div className="game-board">
-      <Header currentScore={currentScore} highScore={highScore}></Header>
+    <div >
+      <Header className="header" currentScore={currentScore} highScore={highScore}></Header>
+      <div className="game-board">
+        {shuffle(characters)}
+        {characters.map((character) => {
+          return (
+            <Card
+              in={entered}
+              checkCards={checkCards}
+              key={character.name}
+              name={character.name}
+              image={character.image}
+            />
+          );
+        })}
 
-      {shuffle(characters)}
-      {characters.map((character) => {
-        return (
-          <Card
-            checkCards={checkCards}
-            key={character.name}
-            name={character.name}
-            image={character.image}
-          />
-        );
-      })}
+      </div>
     </div>
   );
 };
